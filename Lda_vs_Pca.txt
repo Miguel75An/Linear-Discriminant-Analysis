@@ -1,0 +1,10 @@
+Here is what we found out while comparing the LDA and PCA
+
+When we applied the PCA to the dataset for cars, we noticed a huge cluster that contains
+3 different classes stacked on top of each other. It seems very hard to distinguish which is which.
+That should be a common thing for PCA because it foucs on finding the max variance within the data and
+it doesnt take the labels into account. It treats the dataset as a whole.
+
+When using LDA, the clutering was still present, but wasnt as bad as PCA. LDA tries to find the most 
+variance between classes while taking labeling into account. 
+Because of this we can somewhat see the seperation better compared with PCA.
